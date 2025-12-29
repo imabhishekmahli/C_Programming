@@ -31,6 +31,28 @@ int odd(int z)
     }
   }
 }
+
+int individual(int a)
+{
+  while(a>0)
+  {
+    int digit = a%10;
+    cout<<digit<<endl;
+    a=a/10;
+  }
+}
+
+int sum(int a)
+{
+  int s=0;
+  while(a>0)
+  {
+    int digit = a%10;
+    s=s+digit;
+    a=a/10;
+  }
+  return s;
+}
 int main()
 {
   int a;
@@ -39,6 +61,9 @@ int main()
   cout<<endl;
   //cout<<reverse(a);
   cout<<endl;
-  cout<<odd(a);
+  //cout<<odd(a);
+  //cout<<individual(a);
+  cout<<endl;
+  cout<<sum(a);
   return 0;
 }
