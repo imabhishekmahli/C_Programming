@@ -17,5 +17,10 @@ int main()
   {
     cout<<ch<<" "<<int(ch)<<endl;
   }
+  cout<<endl;
+  for(int i=33;i<=125;i++)
+  {
+    cout<<char(i)<<" "<<i<<endl;
+  }
   return 0;
 }
