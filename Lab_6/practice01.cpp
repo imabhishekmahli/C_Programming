@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 int main()
@@ -13,14 +14,26 @@ int main()
   // cout<<ch<<endl;
   // cout<<int(ch)<<endl;
 
-  for(char ch='A';ch<='Z';ch++)
+  // for(char ch='A';ch<='Z';ch++)
+  // {
+  //   cout<<ch<<" "<<int(ch)<<endl;
+  // }
+  // cout<<endl;
+  // for(int i=33;i<=125;i++)
+  // {
+  //   cout<<char(i)<<" "<<i<<endl;
+  // }
+
+  // string s1 = "abhishek kumar";
+  // cout<<s1;
+
+  // reverse a word
+
+  string s1;
+  cin>>s1;
+  for(int i=s1.length()-1;i>=0;i--)
   {
-    cout<<ch<<" "<<int(ch)<<endl;
-  }
-  cout<<endl;
-  for(int i=33;i<=125;i++)
-  {
-    cout<<char(i)<<" "<<i<<endl;
+    cout<<s1[i];
   }
   return 0;
 }
